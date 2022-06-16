@@ -1,1 +1,0 @@
-# liveness-oiti-sdk

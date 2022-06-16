@@ -1,0 +1,17 @@
+{
+  "name": "liveness-oiti-sdk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/gabriel-labsit/liveness-oiti-sdk.git",
+  "author": "Gabriel Santana <gabriel.sistemasjr@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "jquery": "^3.6.0",
+    "sweetalert2": "^11.4.17"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.1.1",
+    "@types/jquery": "^3.5.14"
+  }
+}
