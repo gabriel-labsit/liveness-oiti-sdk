@@ -1,5 +1,7 @@
 import SdkSettings from "./Interfaces/Settings/SdkSettings";
 import { startCapture } from "./Componentes/Sdk";
+// import jQuery from "../node_modules/jquery/dist/jquery.min.js";
+import jQuery from "jquery";
 
 const sdkSettings: SdkSettings = {
   cpf: "33199707807",
@@ -16,6 +18,8 @@ function gerarCredencial() {
     user: sdkSettings.user,
     pass: sdkSettings.pass,
   });
+
+  console.log("gerei a credencial.");
 
   jQuery.support.cors = true;
   jQuery.ajax({
@@ -50,6 +54,8 @@ function gerarAppkey(chavePrivada) {
     nascimento: sdkSettings.nascimento,
   });
 
+  console.log("gerei a appkey.");
+
   jQuery.support.cors = true;
   jQuery.ajax({
     type: "POST",
@@ -74,3 +80,5 @@ function gerarAppkey(chavePrivada) {
     },
   });
 }
+
+gerarCredencial();

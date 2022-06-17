@@ -8,6 +8,9 @@ import {
   NoCamera,
 } from "../Interfaces/Settings/GeneralInfo";
 
+import jQuery from "jquery";
+import $ from "jquery";
+
 import Errors from "../Interfaces/Settings/Errors";
 
 let fcvarUrlbase = "https://comercial.certiface.com.br:443";
@@ -34,12 +37,7 @@ let canvasH = 480;
 
 let canContinue = true;
 
-$(function () {
-  // inicializa câmera de video.
-  startCamera();
-});
-
-function startCamera() {
+(function startCamera() {
   // get video element
   let video = document.getElementById("player")! as HTMLMediaElement;
   video.setAttribute("autoplay", "");
@@ -95,7 +93,7 @@ function startCamera() {
         allowEnterKey: false,
       }).then(() => location.reload());
     });
-}
+})();
 
 const stopCameraInternal = (stream: any) =>
   stream.getVideoTracks().forEach((track: { stop: () => any }) => track.stop());

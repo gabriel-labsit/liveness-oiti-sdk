@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+
+    <div id="content" class="content">
+        
+      <div id="container" class="container">
+          <div class="outer r4x3">
+              <div class="inner">
+
+                  <div id="divPowered">
+                      <span class="spanMsg" th:text="#{liveness_msgPowered}">Powered by Oiti Technologies</span>
+                  </div>
+                  <div id="overlay" class="overlay">
+                  </div>
+
+                  <div id="content-video" class="content-video">
+                      <video id="player" >
+                      </video>
+                  </div>
+
+                  <div id="divLoader" style="display: none;">
+                      <div class="loader"></div>
+                  </div>
+
+                  <div id="divMsg" style="display: none;">
+                      <img id="imgMsg" />
+                      <span id="spanMsg">CLIQUE EM INICIAR</span>
+                  </div>
+
+                  <div id="divSorriso" style="display: none;">
+                      <img id="imgChallenge" />
+                  </div>
+
+                  <div id="divButton" style="display: none;">
+                      <button id="btnIniciar" class="rect green">INICIAR</button>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+
+  </div>
+
+  <canvas id="fc_canvas" style="display: none"></canvas>
+  </div>
+
+    <script type="module" src="./dist/app-bundle.js"></script>
+  </body>
+</html>
