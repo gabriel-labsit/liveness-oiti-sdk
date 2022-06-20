@@ -12,6 +12,12 @@ const sdkSettings: SdkSettings = {
   fcvarUrlbase: "https://comercial.certiface.com.br:443",
 };
 
+jQuery(() => {
+  jQuery("#btnIniciar").on("click", () => {
+    gerarCredencial();
+  });
+});
+
 // Gera credencial de acesso. Deve ser feita no backend
 function gerarCredencial() {
   var data = jQuery.param({
