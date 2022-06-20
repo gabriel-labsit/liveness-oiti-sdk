@@ -81,4 +81,4 @@ function gerarAppkey(chavePrivada) {
   });
 }
 
-gerarCredencial();
+// gerarCredencial();
